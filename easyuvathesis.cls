@@ -280,6 +280,7 @@
 \newcommand{\masttwo}[1]{\gdef\@masttwo{#1}}
 \newcommand{\hometown}[1]{\gdef\@hometown{#1}}
 \newcommand{\degreedate}[1]{\gdef\@degreedate{#1}}
+\newcommand{\degreemonthyear}[1]{\gdef\@degreemonthyear{#1}}
 \newcommand{\degreename}[1]{\gdef\@degreename{#1}}
 \newcommand{\commone}[1]{\gdef\@commone{#1}}
 \newcommand{\commtwo}[1]{\gdef\@commtwo{#1}}
@@ -320,25 +321,39 @@
       \vskip 12pt
       University of Virginia
       \vskip 0pt
-      \@degreedate
-      \vskip 32pt
-      \hspace{3.75truein}\hrulefill \\
-      \vskip 0pt
+      \@degreemonthyear
+      %The below lines are outdated; UVa doesn't want this
+      %\vskip 32pt
+      %\hspace{3.75truein}\hrulefill \\
+      %\vskip 0pt
+      %\hspace{3.75truein}\@commone
+      %\vskip 20pt
+      %\hspace{3.75truein}\hrulefill \\
+      %\vskip 0pt
+      %\hspace{3.75truein}\@commtwo
+      %\vskip 20pt
+      %\hspace{3.75truein}\hrulefill \\
+      %\vskip 0pt
+      %\hspace{3.75truein}\@commthree
+      %\vskip 20pt
+      %\hspace{3.75truein}\hrulefill \\
+      %\vskip 0pt
+      %\hspace{3.75truein}\@commfour
+      %\vskip 20pt
+      %\hspace{3.75truein}\hrulefill \\
+      %\vskip 0pt
+      %\hspace{3.75truein}\@commfive
+      %Either leave committee off the page or try:
+      \vskip 100pt
+      \hspace{3.75truein} Committee Members:
+      \vskip 5pt
       \hspace{3.75truein}\@commone
-      \vskip 20pt
-      \hspace{3.75truein}\hrulefill \\
       \vskip 0pt
       \hspace{3.75truein}\@commtwo
-      \vskip 20pt
-      \hspace{3.75truein}\hrulefill \\
       \vskip 0pt
       \hspace{3.75truein}\@commthree
-      \vskip 20pt
-      \hspace{3.75truein}\hrulefill \\
       \vskip 0pt
       \hspace{3.75truein}\@commfour
-      \vskip 20pt
-      \hspace{3.75truein}\hrulefill \\
       \vskip 0pt
       \hspace{3.75truein}\@commfive
       
@@ -346,7 +361,7 @@
       \thispagestyle{empty}
       \null
       \vfill
-      \copyright Copyright by
+      \copyright\ Copyright by
       \vskip 10pt
       \@author
       \vskip 10pt

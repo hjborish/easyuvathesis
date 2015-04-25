@@ -17,6 +17,8 @@ nagcheck:
 titlepage:
 	latex $(TNAME)
 	latex $(TNAME)
+	dvips -t letter $(TNAME) -o $(TNAME).ps
+	ps2pdf $(TNAME).ps
 
 pdf:
 	dvips -t letter $(NAME) -o $(NAME).ps
